@@ -24,8 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/vendor.min.css",
-              "src/assets/css/theme.min.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/theme.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -42,7 +42,7 @@
               "node_modules/smooth-scroll/dist/smooth-scroll.min.js",
               "node_modules/tiny-slider/dist/min/tiny-slider.js",
               "node_modules/drift-zoom/dist/Drift.min.js",
-              "src/assets/js/theme.min.js"
+              "src/assets/js/theme.js"
             ]
           },
           "configurations": {
