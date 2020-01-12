@@ -29,20 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/lightgallery.js/dist/js/lightgallery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/bs-custom-file-input/dist/bs-custom-file-input.min.js",
-              "node_modules/lg-fullscreen.js/dist/lg-fullscreen.min.js",
-              "node_modules/lg-video.js/dist/lg-video.min.js",
-              "node_modules/lg-zoom.js/dist/lg-zoom.min.js",
-              "node_modules/salvattore/dist/salvattore.min.js",
-              "node_modules/nouislider/distribute/nouislider.min.js",
-              "node_modules/simplebar/dist/simplebar.min.js",
-              "node_modules/smooth-scroll/dist/smooth-scroll.min.js",
-              "node_modules/tiny-slider/dist/min/tiny-slider.js",
-              "node_modules/drift-zoom/dist/Drift.min.js",
-              "src/assets/js/theme.js"
+
             ]
           },
           "configurations": {
