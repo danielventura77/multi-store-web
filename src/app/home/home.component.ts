@@ -29,21 +29,21 @@ export class HomeComponent implements OnInit {
 
     if (!isFound) {
       var dynamicScripts = [
-        "../../assets/js/jquery.min.js",
-        "../../assets/js/popper.min.js",
-        "../../assets/js/lightgallery.min.js",
-        "../../assets/js/bootstrap.min.js",
-        "../../assets/js/bs-custom-file-input.min.js",
-        "../../assets/js/lg-fullscreen.min.js",
-        "../../assets/js/lg-video.min.js",
-        "../../assets/js/lg-zoom.min.js",
-        "../../assets/js/masonry-grid.min.js",
-        "../../assets/js/nouislider.min.js",
-        "../../assets/js/simplebar.min.js",
-        "../../assets/js/smooth-scroll.min.js",
-        "../../assets/js/tiny-slider.min.js",
-        "../../assets/js/drift.min.js",
-        "../../assets/js/theme.min.js"
+        "assets/js/jquery.min.js",
+        "assets/js/popper.min.js",
+        "assets/js/lightgallery.min.js",
+        "assets/js/bootstrap.min.js",
+        "assets/js/bs-custom-file-input.min.js",
+        "assets/js/lg-fullscreen.min.js",
+        "assets/js/lg-video.min.js",
+        "assets/js/lg-zoom.min.js",
+        "assets/js/masonry-grid.min.js",
+        "assets/js/nouislider.min.js",
+        "assets/js/simplebar.min.js",
+        "assets/js/smooth-scroll.min.js",
+        "assets/js/tiny-slider.min.js",
+        "assets/js/drift.min.js",
+        "assets/js/theme.min.js"
       ];
 
       for (var i = 0; i < dynamicScripts.length; i++) {

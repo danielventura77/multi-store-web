@@ -1,12 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './template/header/header.component';
-import { FooterComponent } from './template/footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import {APP_BASE_HREF} from '@angular/common';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './template/header/header.component';
+import {FooterComponent} from './template/footer/footer.component';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,7 @@ import {APP_BASE_HREF} from '@angular/common';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
