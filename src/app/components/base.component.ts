@@ -1,26 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
-})
-export class HomeComponent implements OnInit {
-
-  loadAPI: Promise<any>;
-
-  constructor() {
-    this.loadAPI = new Promise((resolve) => {
-      this.loadScript();
-      resolve(true);
-    });
-  }
-
-  ngOnInit() { }
+export abstract class BaseComponent {
 
   public loadScript() {
     var isFound = false;
-    var scripts = document.getElementsByTagName("script")
+    var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; ++i) {
       if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("jquery.min")) {
         isFound = true;
@@ -42,8 +24,7 @@ export class HomeComponent implements OnInit {
         "assets/js/simplebar.min.js",
         "assets/js/smooth-scroll.min.js",
         "assets/js/tiny-slider.min.js",
-        "assets/js/drift.min.js",
-        "assets/js/theme.min.js"
+        "assets/js/drift.min.js"
       ];
 
       for (var i = 0; i < dynamicScripts.length; i++) {
@@ -56,8 +37,27 @@ export class HomeComponent implements OnInit {
       }
 
     }
+
+    this.inializeThemeScript();
+
   }
 
+  private inializeThemeScript(){
 
+    var scripts2 = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts2.length; ++i) {
+      if (scripts2[i].getAttribute('src') != null && scripts2[i].getAttribute('src').includes("theme.min")) {
+        scripts2[i].remove();
+      }
+    }
+
+    let node = document.createElement('script');
+    node.src = "assets/js/theme.min.js";
+    node.type = 'text/javascript';
+    node.async = false;
+    node.charset = 'utf-8';
+    document.getElementsByTagName('body')[0].appendChild(node);
+
+  }
 
 }
