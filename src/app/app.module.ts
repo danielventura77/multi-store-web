@@ -10,6 +10,13 @@ import {HomeFashionV1Component} from './components/home-fashion-v1/home-fashion-
 import { QuickViewComponent } from './components/quick-view/quick-view.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeElectronicsComponent } from './components/home-electronics/home-electronics.component';
+import { DepartmentsMenuV1Component } from './components/departments-menu-v1/departments-menu-v1.component';
+import { DepartmentsMenuV2Component } from './components/departments-menu-v2/departments-menu-v2.component';
+import { CartDropdownComponent } from './components/cart-dropdown/cart-dropdown.component';
+import { PrimaryMenuComponent } from './components/primary-menu/primary-menu.component';
+import { ProductV1Component } from './components/product-v1/product-v1.component';
+import { ProductV2Component } from './components/product-v2/product-v2.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +27,14 @@ import { HomeElectronicsComponent } from './components/home-electronics/home-ele
     HomeFashionV1Component,
     QuickViewComponent,
     LoginComponent,
-    HomeElectronicsComponent
+    HomeElectronicsComponent,
+    DepartmentsMenuV1Component,
+    DepartmentsMenuV2Component,
+    CartDropdownComponent,
+    PrimaryMenuComponent,
+    ProductV1Component,
+    ProductV2Component,
+    CartComponent
   ],
   imports: [
     BrowserModule,
