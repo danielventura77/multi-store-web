@@ -1,3 +1,5 @@
+import * as $ from 'jquery';
+
 export abstract class BaseComponent {
 
   public loadScript() {
@@ -38,16 +40,61 @@ export abstract class BaseComponent {
 
     }
 
-    this.inializeThemeScript();
+    this.initializeThemeScript();
 
   }
 
-  private inializeThemeScript(){
+  public initializeCardScript(){
 
-    var scripts2 = document.getElementsByTagName("script");
-    for (var i = 0; i < scripts2.length; ++i) {
-      if (scripts2[i].getAttribute('src') != null && scripts2[i].getAttribute('src').includes("theme.min")) {
-        scripts2[i].remove();
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+      if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("card.init")) {
+        scripts[i].remove();
+      }
+    }
+
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+      if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("card.min")) {
+        scripts[i].remove();
+      }
+    }
+
+    let node = document.createElement('script');
+    node.src = "assets/js/card.min.js";
+    node.type = 'text/javascript';
+    node.async = false;
+    node.charset = 'utf-8';
+    document.getElementsByTagName('body')[0].appendChild(node);
+
+    let nodeCardScript = document.createElement('script');
+    nodeCardScript.src = "assets/js/card.init.js";
+    nodeCardScript.type = 'text/javascript';
+    nodeCardScript.async = false;
+    nodeCardScript.charset = 'utf-8';
+    document.getElementsByTagName('body')[0].appendChild(nodeCardScript);
+  }
+
+  private initializeThemeScript(){
+
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+      if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("theme.min")) {
+        scripts[i].remove();
+      }
+    }
+
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+      if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("card.init")) {
+        scripts[i].remove();
+      }
+    }
+
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; ++i) {
+      if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("card.min")) {
+        scripts[i].remove();
       }
     }
 

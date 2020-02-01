@@ -17,6 +17,18 @@ import { PrimaryMenuComponent } from './components/primary-menu/primary-menu.com
 import { ProductV1Component } from './components/product-v1/product-v1.component';
 import { ProductV2Component } from './components/product-v2/product-v2.component';
 import { CartComponent } from './components/cart/cart.component';
+import { CheckoutDetailsComponent } from './components/checkout-details/checkout-details.component';
+import { CheckoutShippingComponent } from './components/checkout-shipping/checkout-shipping.component';
+import { CheckoutPaymentComponent } from './components/checkout-payment/checkout-payment.component';
+import { CheckoutReviewComponent } from './components/checkout-review/checkout-review.component';
+import { CheckoutCompleteComponent } from './components/checkout-complete/checkout-complete.component';
+import { OrderTrackingComponent } from './components/order-tracking/order-tracking.component';
+import { OrderDetailsModalComponent } from './components/order-details-modal/order-details-modal.component';
+import { AccountProfileComponent } from './components/account-profile/account-profile.component';
+import { AccountOrdersComponent } from './components/account-orders/account-orders.component';
+import { AccountWishlistComponent } from './components/account-wishlist/account-wishlist.component';
+import { AccountAddressComponent } from './components/account-address/account-address.component';
+import { AccountNewAddressModalComponent } from './components/account-new-address-modal/account-new-address-modal.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +46,19 @@ import { CartComponent } from './components/cart/cart.component';
     PrimaryMenuComponent,
     ProductV1Component,
     ProductV2Component,
-    CartComponent
+    CartComponent,
+    CheckoutDetailsComponent,
+    CheckoutShippingComponent,
+    CheckoutPaymentComponent,
+    CheckoutReviewComponent,
+    CheckoutCompleteComponent,
+    OrderTrackingComponent,
+    OrderDetailsModalComponent,
+    AccountProfileComponent,
+    AccountOrdersComponent,
+    AccountWishlistComponent,
+    AccountAddressComponent,
+    AccountNewAddressModalComponent
   ],
   imports: [
     BrowserModule,

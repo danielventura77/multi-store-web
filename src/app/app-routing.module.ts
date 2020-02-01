@@ -6,6 +6,16 @@ import {HomeElectronicsComponent} from './components/home-electronics/home-elect
 import {ProductV1Component} from './components/product-v1/product-v1.component';
 import {ProductV2Component} from './components/product-v2/product-v2.component';
 import {CartComponent} from './components/cart/cart.component';
+import {CheckoutDetailsComponent} from './components/checkout-details/checkout-details.component';
+import {CheckoutShippingComponent} from './components/checkout-shipping/checkout-shipping.component';
+import {CheckoutPaymentComponent} from './components/checkout-payment/checkout-payment.component';
+import {CheckoutReviewComponent} from './components/checkout-review/checkout-review.component';
+import {CheckoutCompleteComponent} from './components/checkout-complete/checkout-complete.component';
+import {OrderTrackingComponent} from './components/order-tracking/order-tracking.component';
+import {AccountProfileComponent} from './components/account-profile/account-profile.component';
+import {AccountOrdersComponent} from './components/account-orders/account-orders.component';
+import {AccountWishlistComponent} from './components/account-wishlist/account-wishlist.component';
+import {AccountAddressComponent} from './components/account-address/account-address.component';
 
 
 const routes: Routes = [
@@ -19,7 +29,17 @@ const routes: Routes = [
   { path: 'home-electronics', component: HomeElectronicsComponent },
   { path: 'product-v1', component: ProductV1Component },
   { path: 'product-v2', component: ProductV2Component },
-  { path: 'cart', component: CartComponent }
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout-details', component: CheckoutDetailsComponent },
+  { path: 'checkout-shipping', component: CheckoutShippingComponent },
+  { path: 'checkout-payment', component: CheckoutPaymentComponent },
+  { path: 'checkout-review', component: CheckoutReviewComponent },
+  { path: 'checkout-complete', component: CheckoutCompleteComponent },
+  { path: 'order-tracking', component: OrderTrackingComponent },
+  { path: 'account-profile', component: AccountProfileComponent },
+  { path: 'account-orders', component: AccountOrdersComponent },
+  { path: 'account-wishlist', component: AccountWishlistComponent },
+  { path: 'account-address', component: AccountAddressComponent }
 ];
 
 @NgModule({
