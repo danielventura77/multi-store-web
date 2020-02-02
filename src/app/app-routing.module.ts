@@ -16,6 +16,11 @@ import {AccountProfileComponent} from './components/account-profile/account-prof
 import {AccountOrdersComponent} from './components/account-orders/account-orders.component';
 import {AccountWishlistComponent} from './components/account-wishlist/account-wishlist.component';
 import {AccountAddressComponent} from './components/account-address/account-address.component';
+import {AccountPaymentComponent} from './components/account-payment/account-payment.component';
+import {AccountPasswordRecoveryComponent} from './components/account-password-recovery/account-password-recovery.component';
+import {AccountSigninComponent} from './components/account-signin/account-signin.component';
+import {DepartmentGridComponent} from './components/department-grid/department-grid.component';
+import {DepartmentListComponent} from './components/department-list/department-list.component';
 
 
 const routes: Routes = [
@@ -39,7 +44,12 @@ const routes: Routes = [
   { path: 'account-profile', component: AccountProfileComponent },
   { path: 'account-orders', component: AccountOrdersComponent },
   { path: 'account-wishlist', component: AccountWishlistComponent },
-  { path: 'account-address', component: AccountAddressComponent }
+  { path: 'account-address', component: AccountAddressComponent },
+  { path: 'account-payment', component: AccountPaymentComponent },
+  { path: 'account-password-recovery', component: AccountPasswordRecoveryComponent },
+  { path: 'account-signin', component: AccountSigninComponent },
+  { path: 'department-grid', component: DepartmentGridComponent },
+  { path: 'department-list', component: DepartmentListComponent }
 ];
 
 @NgModule({

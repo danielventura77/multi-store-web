@@ -29,6 +29,12 @@ import { AccountOrdersComponent } from './components/account-orders/account-orde
 import { AccountWishlistComponent } from './components/account-wishlist/account-wishlist.component';
 import { AccountAddressComponent } from './components/account-address/account-address.component';
 import { AccountNewAddressModalComponent } from './components/account-new-address-modal/account-new-address-modal.component';
+import { AccountPaymentComponent } from './components/account-payment/account-payment.component';
+import { AccountNewPaymentModalComponent } from './components/account-new-payment-modal/account-new-payment-modal.component';
+import { AccountPasswordRecoveryComponent } from './components/account-password-recovery/account-password-recovery.component';
+import { AccountSigninComponent } from './components/account-signin/account-signin.component';
+import { DepartmentGridComponent } from './components/department-grid/department-grid.component';
+import { DepartmentListComponent } from './components/department-list/department-list.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +64,13 @@ import { AccountNewAddressModalComponent } from './components/account-new-addres
     AccountOrdersComponent,
     AccountWishlistComponent,
     AccountAddressComponent,
-    AccountNewAddressModalComponent
+    AccountNewAddressModalComponent,
+    AccountPaymentComponent,
+    AccountNewPaymentModalComponent,
+    AccountPasswordRecoveryComponent,
+    AccountSigninComponent,
+    DepartmentGridComponent,
+    DepartmentListComponent
   ],
   imports: [
     BrowserModule,

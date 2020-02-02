@@ -1,4 +1,4 @@
-<app-account-new-address-modal></app-account-new-address-modal>
+<app-account-new-payment-modal></app-account-new-payment-modal>
 <!-- Page Title (Shop)-->
 <div class="page-title-overlap bg-dark pt-4">
   <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
@@ -8,12 +8,12 @@
           <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><i class="czi-home"></i>Home</a></li>
           <li class="breadcrumb-item text-nowrap"><a href="#">Account</a>
           </li>
-          <li class="breadcrumb-item text-nowrap active" aria-current="page">Addresses</li>
+          <li class="breadcrumb-item text-nowrap active" aria-current="page">Payment methods</li>
         </ol>
       </nav>
     </div>
     <div class="order-lg-1 pr-lg-4 text-center text-lg-left">
-      <h1 class="h3 text-light mb-0">My addresses</h1>
+      <h1 class="h3 text-light mb-0">My payment methods</h1>
     </div>
   </div>
 </div>
@@ -44,8 +44,8 @@
         </div>
         <ul class="list-unstyled mb-0">
           <li class="border-bottom mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" routerLink="/account-profile"><i class="czi-user opacity-60 mr-2"></i>Profile info</a></li>
-          <li class="border-bottom mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3 active" routerLink="/account-address"><i class="czi-location opacity-60 mr-2"></i>Addresses</a></li>
-          <li class="mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" routerLink="/account-payment"><i class="czi-card opacity-60 mr-2"></i>Payment methods</a></li>
+          <li class="border-bottom mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" routerLink="/account-address"><i class="czi-location opacity-60 mr-2"></i>Addresses</a></li>
+          <li class="mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3 active" routerLink="/account-payment"><i class="czi-card opacity-60 mr-2"></i>Payment methods</a></li>
           <li class="d-lg-none border-top mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" routerLink="/account-signin"><i class="czi-sign-out opacity-60 mr-2"></i>Sign out</a></li>
         </ul>
       </div>
@@ -54,30 +54,72 @@
     <section class="col-lg-8">
       <!-- Toolbar-->
       <div class="d-none d-lg-flex justify-content-between align-items-center pt-lg-3 pb-4 pb-lg-5 mb-lg-4">
-        <h6 class="font-size-base text-light mb-0">List of your registered addresses:</h6><a class="btn btn-primary btn-sm" routerLink="/account-signin"><i class="czi-sign-out mr-2"></i>Sign out</a>
+        <h6 class="font-size-base text-light mb-0">Primary payment method is used by default</h6><a class="btn btn-primary btn-sm" routerLink="/account-signin"><i class="czi-sign-out mr-2"></i>Sign out</a>
       </div>
-      <!-- Addresses list-->
+      <!-- Payment methods list-->
       <div class="table-responsive font-size-md">
         <table class="table table-hover mb-0">
           <thead>
           <tr>
-            <th>Address</th>
-            <th>Actions</th>
+            <th>Your credit / debit cards</th>
+            <th>Name on card</th>
+            <th>Expires on</th>
+            <th></th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <td class="py-3 align-middle">396 Lillian Blvd, Holbrook, NY 11741, USA<span class="align-middle badge badge-info ml-2">Primary</span></td>
+            <td class="py-3 align-middle">
+              <div class="media align-items-center"><img class="mr-2" src="assets/img/card-visa.png" width="39" alt="Visa">
+                <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 4999<span class="align-middle badge badge-info ml-2">Primary</span></div>
+              </div>
+            </td>
+            <td class="py-3 align-middle">Susan Gardner</td>
+            <td class="py-3 align-middle">08 / 2019</td>
             <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Remove">
               <div class="czi-trash"></div></a></td>
           </tr>
           <tr>
-            <td class="py-3 align-middle">769, Industrial, West Chicago, IL 60185, USA</td>
+            <td class="py-3 align-middle">
+              <div class="media align-items-center"><img class="mr-2" src="assets/img/card-master.png" width="39" alt="MesterCard">
+                <div class="media-body"><span class="font-weight-medium text-heading mr-1">MasterCard</span>ending in 0015</div>
+              </div>
+            </td>
+            <td class="py-3 align-middle">Susan Gardner</td>
+            <td class="py-3 align-middle">11 / 2021</td>
             <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Remove">
               <div class="czi-trash"></div></a></td>
           </tr>
           <tr>
-            <td class="py-3 align-middle">514 S. Magnolia St. Orlando, FL 32806, USA</td>
+            <td class="py-3 align-middle">
+              <div class="media align-items-center"><img class="mr-2" src="assets/img/card-paypal.png" width="39" alt="PayPal">
+                <div class="media-body"><span class="font-weight-medium text-heading mr-1">PayPal</span>s.gardner@example.com</div>
+              </div>
+            </td>
+            <td class="py-3 align-middle">&mdash;</td>
+            <td class="py-3 align-middle">&mdash;</td>
+            <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Remove">
+              <div class="czi-trash"></div></a></td>
+          </tr>
+          <tr>
+            <td class="py-3 align-middle">
+              <div class="media align-items-center"><img class="mr-2" src="assets/img/card-visa.png" width="39" alt="Visa">
+                <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 6073</div>
+              </div>
+            </td>
+            <td class="py-3 align-middle">Susan Gardner</td>
+            <td class="py-3 align-middle">09 / 2021</td>
+            <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Remove">
+              <div class="czi-trash"></div></a></td>
+          </tr>
+          <tr>
+            <td class="py-3 align-middle">
+              <div class="media align-items-center"><img class="mr-2" src="assets/img/card-visa.png" width="39" alt="Visa">
+                <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 9791</div>
+              </div>
+            </td>
+            <td class="py-3 align-middle">Susan Gardner</td>
+            <td class="py-3 align-middle">05 / 2021</td>
             <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" onclick="$('.tooltip').hide();" data-toggle="tooltip" title="Remove">
               <div class="czi-trash"></div></a></td>
           </tr>
@@ -85,11 +127,10 @@
         </table>
       </div>
       <hr class="pb-4">
-      <div class="text-sm-right"><a class="btn btn-primary" href="#add-address" data-toggle="modal">Add new address</a></div>
+      <div class="text-sm-right"><a class="btn btn-primary" href="#add-payment" data-toggle="modal">Add payment method</a></div>
     </section>
   </div>
 </div>
-
 <!-- Toolbar for handheld devices-->
 <div class="cz-handheld-toolbar">
   <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item" routerLink="/account-wishlist"><span class="cz-handheld-toolbar-icon"><i class="czi-heart"></i></span><span class="cz-handheld-toolbar-label">Wishlist</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item" routerLink="/cart"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span class="badge badge-primary badge-pill ml-1">4</span></span><span class="cz-handheld-toolbar-label">$265.00</span></a>
