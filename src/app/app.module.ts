@@ -7,8 +7,6 @@ import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HomeFashionV2Component} from './components/home-fashion-v2/home-fashion-v2.component';
 import {HomeFashionV1Component} from './components/home-fashion-v1/home-fashion-v1.component';
-import { QuickViewComponent } from './components/quick-view/quick-view.component';
-import { LoginComponent } from './components/login/login.component';
 import { HomeElectronicsComponent } from './components/home-electronics/home-electronics.component';
 import { DepartmentsMenuV1Component } from './components/departments-menu-v1/departments-menu-v1.component';
 import { DepartmentsMenuV2Component } from './components/departments-menu-v2/departments-menu-v2.component';
@@ -33,8 +31,12 @@ import { AccountPaymentComponent } from './components/account-payment/account-pa
 import { AccountNewPaymentModalComponent } from './components/account-new-payment-modal/account-new-payment-modal.component';
 import { AccountPasswordRecoveryComponent } from './components/account-password-recovery/account-password-recovery.component';
 import { AccountSigninComponent } from './components/account-signin/account-signin.component';
+import { AccountSigninModalComponent } from './components/account-signin-modal/account-signin-modal.component';
 import { DepartmentGridComponent } from './components/department-grid/department-grid.component';
 import { DepartmentListComponent } from './components/department-list/department-list.component';
+import { ProductQuickviewComponent } from './components/product-quickview/product-quickview.component';
+import { AdminAddNewProductComponent } from './components/admin-add-new-product/admin-add-new-product.component';
+
 
 @NgModule({
   declarations: [
@@ -43,8 +45,6 @@ import { DepartmentListComponent } from './components/department-list/department
     FooterComponent,
     HomeFashionV2Component,
     HomeFashionV1Component,
-    QuickViewComponent,
-    LoginComponent,
     HomeElectronicsComponent,
     DepartmentsMenuV1Component,
     DepartmentsMenuV2Component,
@@ -70,7 +70,10 @@ import { DepartmentListComponent } from './components/department-list/department
     AccountPasswordRecoveryComponent,
     AccountSigninComponent,
     DepartmentGridComponent,
-    DepartmentListComponent
+    DepartmentListComponent,
+    AccountSigninModalComponent,
+    ProductQuickviewComponent,
+    AdminAddNewProductComponent
   ],
   imports: [
     BrowserModule,

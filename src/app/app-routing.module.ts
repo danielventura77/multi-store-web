@@ -21,6 +21,7 @@ import {AccountPasswordRecoveryComponent} from './components/account-password-re
 import {AccountSigninComponent} from './components/account-signin/account-signin.component';
 import {DepartmentGridComponent} from './components/department-grid/department-grid.component';
 import {DepartmentListComponent} from './components/department-list/department-list.component';
+import {AdminAddNewProductComponent} from "./components/admin-add-new-product/admin-add-new-product.component";
 
 
 const routes: Routes = [
@@ -49,7 +50,8 @@ const routes: Routes = [
   { path: 'account-password-recovery', component: AccountPasswordRecoveryComponent },
   { path: 'account-signin', component: AccountSigninComponent },
   { path: 'department-grid', component: DepartmentGridComponent },
-  { path: 'department-list', component: DepartmentListComponent }
+  { path: 'department-list', component: DepartmentListComponent },
+  { path: 'add-new-product', component: AdminAddNewProductComponent }
 ];
 
 @NgModule({

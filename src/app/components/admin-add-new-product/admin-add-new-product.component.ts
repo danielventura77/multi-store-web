@@ -3,11 +3,11 @@ import {BaseComponent} from '../base.component';
 import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-department-list',
-  templateUrl: './department-list.component.html',
-  styleUrls: ['./department-list.component.css']
+  selector: 'app-admin-add-new-product',
+  templateUrl: './admin-add-new-product.component.html',
+  styleUrls: ['./admin-add-new-product.component.css']
 })
-export class DepartmentListComponent extends BaseComponent implements OnInit {
+export class AdminAddNewProductComponent extends BaseComponent implements OnInit {
 
   loadAPI: Promise<any>;
 
