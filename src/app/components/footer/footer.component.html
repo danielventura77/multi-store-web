@@ -161,7 +161,7 @@
 </footer>
 
 <!-- Toolbar for handheld devices-->
-<div class="cz-handheld-toolbar">
+<div *ngIf="router.url!='/add-new-product'" class="cz-handheld-toolbar">
   <div class="d-table table-fixed w-100">
       <a *ngIf="router.url=='/department-grid' || router.url=='/department-list'" class="d-table-cell cz-handheld-toolbar-item" href="#shop-sidebar" data-toggle="sidebar">
         <span class="cz-handheld-toolbar-icon"><i class="czi-filter-alt"></i></span>
