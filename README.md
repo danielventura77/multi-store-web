@@ -1,6 +1,9 @@
-# [MultiStoreWeb](https://danielventura77.github.io/multi-store-web) - https://danielventura77.github.io/multi-store-web
+# [MultiStoreWeb](https://danielventura77.github.io/multi-store-web)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+
+https://danielventura77.github.io/multi-store-web
+
 
 ## Development server
 
